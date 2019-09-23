@@ -15,8 +15,14 @@
 #
 # Use the contacts below
 
+def print_contacts(contacts):
+  for key, phone in contacts.items():
+    print(f"{key} has a phone number of {phone}")
+
 contacts = {
   'Brian': '333-333-3333',
   'Lenny': '444-444-4444',
   'Daniel': '777-777-7777'
 }
+
+print_contacts(contacts)

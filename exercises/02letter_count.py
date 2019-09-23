@@ -22,12 +22,22 @@
 # crash. Remember to use an if statement to see if a key is "in" a dictionary
 # before you try to read it!
 #
+
+def letter_count(str):
+    dic = {}
+    for letter in str:
+        if letter in dic:
+            dic[letter] += 1
+        else:
+            dic[letter] = 1
+    print(dic)
+
 # d2 = {}
 # d2["foo"]
 # > KeyError: 'foo'
 #
 # Example method call:
 #
-# letter_count('banana')
+letter_count('banana')
 #
 # > {'a': 3, 'b': 1, 'n': 3}
